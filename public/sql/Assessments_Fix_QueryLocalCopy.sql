@@ -17,16 +17,19 @@ SELECT CM.[heiw_applicableperiodofgraceinmonths]
       ,CM.[heiw_trainingprogrammemembershipid]
       ,PMP.heiw_fullname
       ,PMP.heiw_programme
-      ,ASSESS.heiw_assessmentid
+      ,ASSESS.heiw_assessmentsid
       ,ASSESS.heiw_curriculumassessedname
       ,ASSESS.heiw_periodcoveredfrom
-  FROM heiw_curriculummembership CM
-  JOIN heiw_programmemembership PMP
+      --,ASSESS.heiw_reviewdate
+  FROM [IntrepidTXWAL_CP35147_Destination].[dbo].[CODI Curriculum Memberships - 24.04.25] CM
+  JOIN ProgMem_PersonIDs PMP
   ON CM.heiw_trainingprogrammemembershipid = PMP.heiw_programmemembershipid
-  LEFT JOIN heiw_assessment ASSESS
+  LEFT JOIN heiw_assessmentsv2 ASSESS
   ON CM.heiw_name = ASSESS.heiw_curriculumassessedname
   AND ASSESS.heiw_periodcoveredfrom >= CM.heiw_startdate
   AND ASSESS.heiw_periodcoveredfrom <= CM.heiw_enddate
+  --AND CM.heiw_startdate >= ASSESS.heiw_periodcoveredfrom
+  --AND CM.heiw_enddate <= ASSESS.heiw_reviewdate
   AND PMP.heiw_fullname = ASSESS.heiw_person
-  WHERE ASSESS.heiw_assessmentid IS NOT NULL
-  ORDER BY ASSESS.heiw_assessmentid ASC
+  WHERE ASSESS.heiw_assessmentsid IS NOT NULL
+  ORDER BY ASSESS.heiw_assessmentsid ASC

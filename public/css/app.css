@@ -23,8 +23,20 @@ p {
     background-color: transparent !important;
 }
 
-.over-card {
-    margin-top: clamp(-55px, -5vw, -180px);
+@media (max-width: 800px) {
+    .over-card {
+        width: 100%;
+        margin: -5px auto 0px auto !important;
+    }
+}
+
+@media (min-width: 801px) {
+    .over-card {
+        width: 100%;
+        margin-top: clamp(-55px, -5vw, -180px);
+        margin-left: auto  !important;
+        margin-right: auto  !important;
+    }
 }
 
 .whitecard {
@@ -35,10 +47,11 @@ p {
     background-color: var(--darkheader) !important;
 }
 
-.headerimage,
-.card {
-    max-width: 90vw;
+.headerimage, .card {
+    width: 100%;
     border: solid 1px #bbb;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .hover-button {
@@ -112,7 +125,7 @@ nav {
 
 /* ===================== Contact form rules =================== */
 .contact_form {
-    width: 80%;
+    width: 90%;
     padding: 20px;
     background: var(--darkheader);
     color: #fff !important;

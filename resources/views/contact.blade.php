@@ -26,7 +26,7 @@
                     @endif
 
                     @include('inc.contactform')
-                    @include('inc.socials')
+                    <!-- @include('inc.socials') -->
                     @include('inc.contactmap')
                     
                 </div>

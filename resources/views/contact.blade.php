@@ -26,6 +26,7 @@
                     @endif
 
                     @include('inc.contactform')
+                    <br><br>
                     <!-- @include('inc.socials') -->
                     @include('inc.contactmap')
                     

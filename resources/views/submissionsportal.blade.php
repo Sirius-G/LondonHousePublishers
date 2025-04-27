@@ -12,7 +12,7 @@
                 <div class="card-header darkheader">
                     <strong class="text-white">Submissions Portal</strong>
                     <div class="d-flex justify-content-end" style="margin-top: -20px;">
-                        <a href="/submissionguide" title="Submissions guide at London House Publishers" aria-label="Submissions guide at London House Publishers" class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm hover-button item">
+                        <a href="/submissionguide" title="Submissions guide at London House Publishers" aria-label="Submissions guide at London House Publishers" class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm hover-button item actionbutton">
                             <strong>View the submissions guide</strong>
                         </a>
                     </div>

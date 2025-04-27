@@ -28,6 +28,9 @@ p {
         width: 100%;
         margin: -5px auto 0px auto !important;
     }
+    .actionbutton {
+        margin-top: 25px;
+    }
 }
 
 @media (min-width: 801px) {
@@ -36,6 +39,9 @@ p {
         margin-top: clamp(-55px, -5vw, -180px);
         margin-left: auto  !important;
         margin-right: auto  !important;
+    }
+    .actionbutton {
+        margin-top: -2px;
     }
 }
 

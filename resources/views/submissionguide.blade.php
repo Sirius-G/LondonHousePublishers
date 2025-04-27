@@ -12,7 +12,7 @@
                 <div class="card-header darkheader">
                     <strong class="text-white">Submission guide</strong>
                     <div class="d-flex justify-content-end" style="margin-top: -20px;">
-                        <a href="/contact" title="Submissions at London House Publishers" aria-label="Submissions at London House Publishers" class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm hover-button item">
+                        <a href="/contact" title="Submissions at London House Publishers" aria-label="Submissions at London House Publishers" class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm hover-button item actionbutton">
                             <strong>Submissions at London House Publishers</strong>
                         </a>
                     </div>

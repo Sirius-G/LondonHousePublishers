@@ -12,7 +12,7 @@
                 <div class="card-header darkheader">
                     <strong class="text-white">Contact and Submissions</strong>
                     <div class="d-flex justify-content-end" style="margin-top: -20px;">
-                        <button class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm hover-button item" onclick="oneClickEnquiry()">
+                        <button class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm hover-button item actionbutton" onclick="oneClickEnquiry()">
                             <strong>Make a submissions enquiry</strong>
                         </button>
                     </div>

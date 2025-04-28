@@ -2,21 +2,22 @@
     <br>
     @if(count($books)>0)
     <div class="row">
-        <div class="main">
+        <div class="mainx">
             <ul id="bk-list" class="bk-list clearfix">
                 @foreach($books as $book)
-                    <li class="box col-sm-6 col-md-4" style="margin-left: -40px; margin-right: 45px;">
+                    <li class="box col-xs-12 col-sm-4" style="margin-left: -40px; margin-right: 45px;">
                         <!-- {{$book->id}}<br> -->
                         <div class="bk-book book-1 bk-bookdefault" style="margin-left: 25px;">
                             <div class="bk-front">
                             <div class="bk-cover-back"></div>
                                 <div class="bk-cover">
-                                    <a href="book_details/{{$book->id}}">
+                                    <a href="book_details/{{$book->bookid}}">
                                         <img src="{{asset($book->c_image)}}" class="booksize">
                                     </a>
                                 </div> 
                             </div>
-                            <div class="bk-page"><!-- Internal page content -->
+                            <!-- Internal page content -->
+                            <div class="bk-page">
                                 <div class="bk-content bk-content-current">
                                     <h5>{{$book->title}}</h5><br>
                                     <h5>written by<br>{{$book->pen_name}}</h5>
@@ -41,15 +42,15 @@
                         </div>
                         <div class="bk-info">
                             <div class="text-center">
-                                <button class="bk-bookback">Blurb</button>
-                                <button class="bk-bookview">Preview</button>
-                                <a href="book_details/{{$book->id}}"><button class="bk-view">More</button></a>
+                                <!-- <button class="bk-bookback">Blurb</button>
+                                <button class="bk-bookview">Preview</button> -->
+                                <a href="book_details/{{$book->bookid}}"><button class="bk-view">More information</button></a>
                             </div>
                             <h3>
                                 <span>{{$book->pen_name}} - <b class="price">from {{$book->pformat}}{{$book->price}}</b></span>
                                 <span>{{$book->title}}</span>
                             </h3>
-                            <p><?php echo substr($book->blurb, 0, 430); ?>...<br><a href="book_details/{{$book->id}}">(read more)</a></p>
+                            <p><?php echo substr($book->blurb, 0, 430); ?>...<br><a href="book_details/{{$book->bookid}}">(read more)</a></p>
                         </div>
                     </li>
                 @endforeach

@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg shadow-sm bg-light sticky-top">
+<nav class="navbar navbar-expand-lg shadow-sm bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand item" href="{{ url('/') }}" tabindex="0" title="London House Publishers Logo and Linked Index" aria-lable="Connor Owen Guitar Logo and Linked Index">
-                    <img src="images/LHP_icon.png" alt="London House Publishers Logo" height="60px">
+                    <img src="{{asset('images/LHP_icon.png')}}" alt="London House Publishers Logo" height="60px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

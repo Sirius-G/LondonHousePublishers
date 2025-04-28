@@ -48,7 +48,7 @@ class HomeController extends Controller
     {
         $data = Contents::where('id', 4)->get();
 
-        $books = Book::with('authors')->orderby('books.id', 'asc')->get();
+        $books = Book::leftjoin('authors', 'books.book_author_id' , '=', 'authors.id')->orderby('books.bookid', 'asc')->get();
 
         return view('recentpublications')->with('data', $data)->with('books', $books);
     }
@@ -94,8 +94,9 @@ class HomeController extends Controller
 
 
     public function book_details($id) {
-        $book = Book::with('authors')->orderby('books.id', 'asc')->where('books.id', $id)->get();
+        $book = Book::with('authors')->orderby('books.bookid', 'asc')->where('books.bookid', $id)->get();
 
+        
         return view('book_details')
              ->with('book', $book);
   

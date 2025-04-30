@@ -29,7 +29,7 @@ function mailForm(name, email, msg){
 function oneClickEnquiry(){
     //Set recipient email address and message
     recipient = 'contact@londonhousepublishers.com';
-    msg = 'Dear London House Publishers, %0A%0AI\'m interested in making a submission. %0A%0AMy name is [Add name here] and my contact telephone number is [Add telephone numer here]. %0A%0AI am [a new author, a previously self-published author, a published author, published with [name of publishing house]]. I have writtem [number] books. Please can you provide more details about the publishing process and costs with London house Publishers. %0A%0AI look forward to hearing from you in due course.';
+    msg = 'Dear London House Publishers, %0A%0AI\'m interested in making a submission. %0A%0AMy name is [Add name here] and my contact telephone number is [Add telephone numer here]. %0A%0AI am [a new author, a previously self-published author, a published author, published with [name of publishing house]]. I have written [number] books. Please can you provide more details about the publishing process and costs with London house Publishers. %0A%0AI look forward to hearing from you in due course.';
 
 
     window.location.href='mailto:'+recipient+'?subject=Quick Submissions Enquiry&body='+msg+'%0A%0ABest regards,%0A%0A[Add you name here]%0A';

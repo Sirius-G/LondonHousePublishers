@@ -10,7 +10,7 @@ html, body {
 
 .bk-list li {
 	position: relative;
-	width: 350px;
+	/* width: 350px; */
 	max-width: 100%;
 	float: left;
 	z-index: 1;
@@ -388,14 +388,14 @@ html, body {
 	display: none;
 }
 
-.box{
+ .box{
 	padding: 20px 10px;
 	min-width: 315px;
 	height: 825px;
 	border: solid 1px #ddd;
 	background: #fff;
 }
-
+/*
 .box2{
 	padding: 10px;
 	width: 315px;
@@ -414,7 +414,7 @@ html, body {
 	border: solid 1px #ddd;
 	background: #fff;
 	text-align: center;
-}
+} */
 
 .top_img{
 	width: 100%;

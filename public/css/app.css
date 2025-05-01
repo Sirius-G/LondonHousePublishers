@@ -218,11 +218,11 @@ div .art_cnt1, div .art_cnt2, div .art_cnt3, div .art_cnt4{
     margin-top: -12px !important;
 }
 
-a .dropdown-item:hover {
+.dropdown:hover {
     background-color: #ddd !important;  
 }
 
-a .dropdown-item:active {
+.dropdown:active {
     background-color: #bbb !important;  
 }
 

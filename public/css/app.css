@@ -209,7 +209,7 @@ div .art_cnt1, div .art_cnt2, div .art_cnt3, div .art_cnt4{
 .item:focus-visible , input.item:focus-visible   {
     outline: none !important; /* Remove default blue border */
     outline: 2px solid var(--darkhighlight) !important; /* highlights the focused link */
-    background-color: #ddd;  /* optional: soft yellow background */
+    background-color: #ddd;  /* optional: soft grey background */
     border-radius: 4px;         /* optional: just makes it look nice */
 }
 
@@ -217,4 +217,13 @@ div .art_cnt1, div .art_cnt2, div .art_cnt3, div .art_cnt4{
     padding: 21px 0px 20px 0px !important;
     margin-top: -12px !important;
 }
+
+.nav .dropdown-item:hover {
+    background-color: #ddd;  
+}
+
+.nav .dropdown-item:active {
+    background-color: #bbb;  
+}
+
   

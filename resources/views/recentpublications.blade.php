@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="header">
-        <img src="images/LHP_Banner.jpg" alt="London House Publishers Banner image" class="headerimage">
+        <img src="images/Pub_Banner.jpg" alt="London House Publishers Banner image" class="headerimage">
     </div>
 
     <div class="row justify-content-center">

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg shadow-sm bg-light fixed-top">
+<nav class="navbar navbar-expand-lg shadow-sm bg-light sticky-top">
             <div class="container">
                 <a class="navbar-brand item" href="{{ url('/') }}" tabindex="0" title="London House Publishers Logo and Linked Index" aria-lable="Connor Owen Guitar Logo and Linked Index">
                     <img src="{{asset('images/LHP_icon.png')}}" alt="London House Publishers Logo" height="60px">

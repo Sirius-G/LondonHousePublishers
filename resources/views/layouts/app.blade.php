@@ -17,6 +17,8 @@
     <!-- Scripts -->
     <script src="{{asset('/js/bootstrap5.bundle.min.js') }}"></script>
     <script src="{{asset('/js/custom.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}" />
